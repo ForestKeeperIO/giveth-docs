@@ -46,7 +46,12 @@ jobs:
           HostName github.com
           IdentityFile ~/.ssh/id_rsa
           EOT
+      - name: Translation Action
+        uses: fabasoad/translation-action@v3.1.4
+            
       - name: Release to GitHub Pages
+
+      
         env:
           USE_SSH: true
           GIT_USER: git
